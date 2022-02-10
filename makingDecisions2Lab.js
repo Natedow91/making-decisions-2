@@ -224,5 +224,15 @@ switch(letterGrade) {
   16
   ...
 */
-
+for(i = 0; i < 100; i++) {
+  if(i % 15 === 0){
+    console.log("devmountain")
+  }else if (i % 3 === 0){
+    console.log("dev")
+  }else if (i % 5 === 0){
+    console.log("mountain")
+  }else {
+    console.log(i)
+  }
+}
 //Code Here
