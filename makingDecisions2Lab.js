@@ -6,9 +6,9 @@
 //   Create a variable named 'firstItem' and set it equal to the first 
 //   value of the 'arr' array.
 // */
-// let firstItem = arr[0]
+let firstItem = arr[0]
 
-// console.log(firstItem)
+console.log(firstItem)
 // //Code Here
 
 
@@ -20,9 +20,9 @@
 */
 
 //Code Here
-// let lastItemRemoved = arr.pop() 
+let lastItemRemoved = arr.pop() 
 
-// console.log(arr)
+console.log(arr)
 
 ////////// PROBLEM 3 //////////
 
@@ -33,9 +33,9 @@
 /*
   Loop through the 'family' array and console.log every item.
 */
-// for(i = 0; i < family.length; i++) {
-//   console.log(family[i])
-// }
+for(i = 0; i < family.length; i++) {
+  console.log(family[i])
+}
 //Code Here
 
 
@@ -46,11 +46,12 @@
 var nums = [1,2,3,6,22,98,45,23,22,12];
 let evensArr = []
 // Do not edit the code above.
-for(i = 0; i = nums.length; i++)
-  if((nums[i] % 2 === 0) != 1){
+for(i = 0; i < nums.length; i++){
+   if(nums[i] % 2 === 0){
     evensArr.push(nums[i])
-    console.log(evensArr)
   }
+}
+// console.log(evensArr)
 
 /*
   Use a for-loop to iterate through each number in the 'nums' array, 
@@ -74,6 +75,17 @@ var score = 74
   between 60 and 69, 'D', and anything below 60 should console log 
   an 'F'.
 */
+if(score >= 90){
+  console.log("A")
+} else if(score >= 80){
+  console.log("B")
+} else if(score >= 70){
+  console.log("C")
+} else if(score >= 60){
+  console.log("D")
+} else if(score < 60)
+  console.log("F")
+
 
 //Code Here
 
@@ -92,14 +104,27 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
+let someNum = myFavoriteNumbers[4]
 
+console.log(someNum)
 
 ////////// PROBLEM 7 //////////
 
-// Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
-// Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
+// Subscripting (accessing values using their index) an array can fail. 
+//What happens if you subscript to the 7th element, but there are not 7 
+//elements in the array? Let's write some code to check for that. 
+// Use an if statement to check the length of the 'myFavoriteNumbers' 
+//array. If it's less than 7, log 'There are not enough elements in 
+//this array' to the console. If the length is more than 7, 
+//reassign the value of 'someNum' to the value of the 7th element in 
+//the array. (Hint: how can you make sure that your code works for 
+//exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
+if(myFavoriteNumbers.length < 7) {
+  console.log("not enough elements")
+}else(myFavoriteNumbers.length >= 7) 
+  someNum = myFavoriteNumbers[6]
 
 
 ////////// PROBLEM 8 //////////
@@ -108,10 +133,16 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Do not edit the code above.
 
-// Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
+// Use a for-loop to iterate through 'listOfNumbers', 
+// checking to see if each number is divisible by 3. If it is, 
+//console.log '{number} is divisible by 3.'
 
 //Code Here
-
+for (i = 0; i < listOfNumbers.length; i++){
+  if(listOfNumbers[i] % 3 ===0){
+    console.log(`${listOfNumbers[i]} is divisable by 3`)
+  }
+}
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -119,9 +150,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // Do not edit the code above.
 
 /*
-  Loop backwards, starting at the end of the 'letters' array. Console log every item in the array.
+  Loop backwards, starting at the end of the 'letters' array. 
+  Console log every item in the array.
 */
-
+for(i = 5; i >= 0; i--){
+  console.log(letters[i])
+}
 //Code Here
 
 
@@ -134,14 +168,16 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 let letterGrade = 'B'
 // Do not edit the code above.
 
-/* Use a switch statement on 'letterGrade' and console.log the appropriate response.
+/* Use a switch statement on 'letterGrade' and console.log the 
+appropriate response.
 
 If A: "The student is doing excellently."
 If B: "The student is doing well."
 If C: "The student is doing alright."
 If D: "The student is not doing very well."
 If F: "The student is failing."
-If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
+If the letter grade is not one of the above letters, console.log 
+'Not an eligible grade.'
 */
 
 //Code Here
