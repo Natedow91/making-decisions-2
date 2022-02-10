@@ -1,31 +1,41 @@
 // For problems 1-2 use the following lines of code:
-var arr = [10,20,30,40,50,60]
+// var arr = [10,20,30,40,50,60]
 
-////////// PROBLEM 1 //////////
-/*
-  Create a variable named 'firstItem' and set it equal to the first value of the 'arr' array.
-*/
-For 
-//Code Here
+// ////////// PROBLEM 1 //////////
+// /*
+//   Create a variable named 'firstItem' and set it equal to the first 
+//   value of the 'arr' array.
+// */
+// let firstItem = arr[0]
+
+// console.log(firstItem)
+// //Code Here
 
 
 ////////// PROBLEM 2 //////////
 /*
-  Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
+  Remove the last item from the 'arr' array and store it in a variable
+  named 'lastItemRemoved'. Console.log the array to verify you no 
+  longer have the last item.
 */
 
 //Code Here
+// let lastItemRemoved = arr.pop() 
+
+// console.log(arr)
 
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
-var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
+// var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 // Do not edit the code above.
 
 /*
   Loop through the 'family' array and console.log every item.
 */
-
+// for(i = 0; i < family.length; i++) {
+//   console.log(family[i])
+// }
 //Code Here
 
 
@@ -36,9 +46,15 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 var nums = [1,2,3,6,22,98,45,23,22,12];
 let evensArr = []
 // Do not edit the code above.
+for(i = 0; i = nums.length; i++)
+  if((nums[i] % 2 === 0) != 1){
+    evensArr.push(nums[i])
+    console.log(evensArr)
+  }
 
 /*
-  Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
+  Use a for-loop to iterate through each number in the 'nums' array, 
+  if the number is even, append it to the 'evensArr'.
 */
 
 //Code Here
@@ -52,7 +68,11 @@ var score = 74
 // Do not edit the code above.
 
 /*
-  Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
+  Determine if the letter grade of the given variable 'score'. 
+  If the variable is a 90 or above, console log an 'A', 
+  between 80 and 89, console log a 'B', between 70 and 79, 'C', 
+  between 60 and 69, 'D', and anything below 60 should console log 
+  an 'F'.
 */
 
 //Code Here
@@ -67,7 +87,8 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Do not edit the code above.
 
 /*
-  Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
+  Create a variable named 'someNum' and set it equal to the fifth value 
+  of the 'myFavoriteNumbers' array.
 */
 
 //Code Here
